@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "IRANSansWeb";
+    font-style: normal;
+    font-weight: bold;
+    src: url("/accets/fonts/sans-web/IRANSansWeb_Bold.eot") format("embedded-opentype"), url("/accets/fonts/sans-web/IRANSansWeb_Bold.woff") format("woff2"), url("/accets/fonts/sans-web/IRANSansWeb_Bold.woff") format("woff"), url("/accets/fonts/sans-web/IRANSansWeb_Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "IRANSansWeb";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/accets/fonts/sans-web/IRANSansWeb_Light.eot") format("embedded-opentype"), url("/accets/fonts/sans-web/IRANSansWeb_Light.woff2") format("woff2"), url("/accets/fonts/sans-web/IRANSansWeb_Light.woff") format("woff"), url("/accets/fonts/sans-web/IRANSansWeb_Light.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "IRANSansWeb";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/accets/fonts/sans-web/IRANSansWeb.eot") format("embedded-opentype"), url("/accets/fonts/sans-web/IRANSansWeb.woff2") format("woff2"), url("/accets/fonts/sans-web/IRANSansWeb.woff") format("woff"), url("/accets/fonts/sans-web/IRANSansWeb.ttf") format("truetype");
+  }
+
+$fontIranYEkan: "IRANSansWeb";
+  * {
+    font-family: "IRANSansWeb";
+    box-sizing: border-box;
+    
+  }/*# sourceMappingURL=font.css.map */
+html{
+
+}
+
+
+
+
+
+

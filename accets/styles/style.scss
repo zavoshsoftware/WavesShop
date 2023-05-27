@@ -1,0 +1,382 @@
+@import "color";
+@import "font";
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    direction: rtl;
+    background-color: $bgLight;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+a:hover{
+    opacity: 0.8;
+}
+h2 , h4 , h5{
+    font-weight: 600;
+}
+header {
+    .navbar {
+        background: $bgLight;
+        border-radius: 0px 0px 205px 205px;
+        // background-image: url(/accets/images/menu-bg.png);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-origin: padding-box;
+        // background-size: 99% 100px;
+        // background-position: center;
+        // overflow: visible;
+        z-index: 1000000;
+        position: fixed;
+        width: 100%;
+        box-shadow: -1px 1px 12px 3px #0000006e;
+        .navbar-nav{
+            margin-right: 50px;
+            .nav-link{
+                padding: 0;
+                margin: 10px;
+                color: #000000dd;
+            }
+        }
+        .nav-link:hover{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.66);
+        }
+        .logo-zavosh{
+            width: 250px;
+            margin-left: 50px;
+            @media only screen and (max-width:992px){
+                width: 130px;
+                }
+        }
+    }
+}
+
+
+
+
+
+.carousel-item {
+    height: 100vh;
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+    @media only screen and (max-width:992px){
+        height: 0vh;
+    height: 265px;
+        }
+}
+.sale-box{
+    position: absolute;
+    background-color: $bgLight;
+    height: 430px;
+    width: 350px;
+    left: 10%;
+    top: 38%;
+    border-radius: 20px;
+    box-shadow: -1px 1px 20px -4px $blueSeeColor;
+    @media only screen and (max-width:992px){
+        left: 7%;
+        
+        }
+    .sale-head{
+        background-color: $blueSeeColor;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0px;
+        height: 35px;
+        margin-bottom: 29px;
+        text-align: center;
+        font-size: 22px;
+        color: $bgLight;
+    }
+    .nav-tabs{
+        background-color: $bgLight;
+        width: 70%;
+        margin: auto;
+        border-radius: 32px;
+          box-shadow: 0px 0px 17px -5px $blueSeeColor;
+    }
+    .nav-item{
+        text-align: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        .nav-link{
+           color: #000;
+           font-size: 16px;
+        }
+        .nav-link:hover{
+            background: none;
+         }
+        .active{
+            font-size: 16px;
+            color: $bgLight;
+            background-color: $blueSeeColor;
+            border-radius: 33px;
+            /* padding: 8px 8px; */
+            height: 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            align-content: stretch;
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+        }
+        .active:hover{
+            background-color: $blueSeeColor;
+        }
+        
+    }
+    .tab-content{
+        .tab-row{
+            text-align: center;
+            margin-top: 10px;
+            span{
+                margin-left: 40px;
+                color: #000;
+            }
+        }
+        .tab-row-date{
+            margin-top: 26px;
+            span{
+                margin-right: 40px;
+            }
+           
+        }
+        .counter{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            border: 1px solid gray;
+            position: relative;
+            top: 16px;
+        }
+        button{
+            border: none;
+            background: none;
+        }
+        input{
+            border-radius: 15px;
+            border:1px solid gray;
+           
+        }
+        
+          
+      
+    }
+    .btn-row{
+        text-align: center;
+        margin-top: 30px;
+        button{
+            width: 40%;
+            border-radius: 20px;
+            font-size: 18px;
+            background-color: red;
+            color: $bgLight;
+        }
+        button:hover{
+            background-color: rgba(255, 0, 0, 0.704);
+            color: $bgLight;
+        }
+    }
+}
+.wave-container {
+    height: 0;
+
+    @media only screen and (max-width:992px){
+       
+    height: 505px;
+        }
+    .wave-up {
+        width: 100%;
+        position: relative;
+        bottom: 220px;
+        @media only screen and (max-width:992px){
+            bottom: 60px;
+            
+            }
+    }
+}
+.about-us-shell{
+  
+align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+
+    h2{
+        color: $blueSeeColor;
+    }
+   p{
+    text-align: justify;
+   }
+    .about-us-img{
+        margin: 10px;
+        width: 90%;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 35px -35px 0px -5px $blueSeeColor;
+    }
+
+}
+.Possibilities-shell{
+    display: flex;
+    align-items: center;
+    filter: opacity(0.9);
+    background-image: url(/accets/images/Possibilities-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+h2{
+    text-align: center;
+    color: $bgLight;
+    position: relative;
+    top: 50px;
+    text-shadow: -1px 4px 8px black;
+    @media only screen and (max-width:992px){
+        top: 10px;
+        }
+    
+}
+.Possibil-box{
+    background-color: $blueSeeColor;
+    width: 90%;
+    height: 350px;
+    border-radius: 20px;
+    padding: 60px;
+    margin: 15px;
+    box-shadow: -1px 1px 12px 3px #0000006e;
+    img{
+        width: 100px;
+    }
+    p{
+        color: $bgLight;
+        padding: 35px;
+    }
+}
+.Possibil-box-center{
+    background-color: $blueLightColor;
+    margin-top: 140px;
+    @media only screen and (max-width:992px){
+       
+        margin-top: 0px;
+        }
+}
+@media only screen and (max-width:992px){
+height: 100%;
+}
+}
+.blue-waves-magazine{
+    h2{
+     text-align: center;
+     margin: 40px;
+     color: $blueSeeColor;
+    }
+    .card{
+        width: 95% !important;
+        border: none;
+        border-radius: 20px;
+        
+        .card-img-top{
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+
+        }
+        .card-body{
+            position: relative;
+            bottom: 55px;
+            .card-date{
+                width: 60px;
+                background-color: $blueSeeColor;
+                height: 60px;
+                color: $bgLight;
+                text-align: center;
+                display: flex;
+                align-content: center;
+                justify-content: space-evenly;
+                /* flex-wrap: nowrap; */
+                align-items: center;
+                border-radius: 90px;
+                margin: auto;
+                margin-left: inherit;
+                position: relative;
+                
+                left: -6%;
+            }
+            .card-text{
+                text-align: justify;
+            }
+        }
+       
+    }
+}
+footer{
+.container{
+    border-top: 1px solid black;
+    padding-top: 50px;
+    margin-top: 130px;
+    .col-lg-7{
+       
+        margin-top: 90px;
+        @media only screen and (max-width:992px){
+            margin-top: 10px;
+            padding-right: 40px
+            }
+       
+    }
+}
+    .footer-paraf{
+        font-size: 12px;
+        text-align: justify;
+        padding: 10px 0 0 0;
+    }
+   
+    .footer-list{
+        padding: 0;
+        list-style: none;
+        list-style-type: " +  ";
+        .footer-list-link{
+            font-size: 12px;
+        }
+        
+       
+    }
+    .connect-ways{
+        padding: 5px 0;
+        .fa{
+            background-color: #69c8f6;
+            width: 25px;
+            height: 25px;
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+            color: $bgLight;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+    .footer-logo{
+        width: 350px;
+    }
+    .footer-img{
+      img{
+        width: 100%;
+      }
+    }
+    
+}
