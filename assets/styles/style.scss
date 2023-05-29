@@ -2,11 +2,12 @@
 @import "font";
 
 body {
+    font-family: $fontIranYEkan;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    direction: rtl;
+    direction: rtl ;
     background-color: $bgLight;
 }
 a{
@@ -24,7 +25,7 @@ header {
     .navbar {
         background: $bgLight;
         border-radius: 0px 0px 205px 205px;
-        // background-image: url(/accets/images/menu-bg.png);
+        // background-image: url(/assets/images/menu-bg.png);
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-origin: padding-box;
@@ -35,6 +36,14 @@ header {
         position: fixed;
         width: 100%;
         box-shadow: -1px 1px 12px 3px #0000006e;
+        @media only screen and (max-width:992px){
+            height: 60px;
+            }
+            .navbar-toggler{
+                @media only screen and (max-width:992px){
+                    margin-right: 50px;
+                    }
+            }
         .navbar-nav{
             margin-right: 50px;
             .nav-link{
@@ -53,12 +62,55 @@ header {
                 width: 130px;
                 }
         }
+        .navbar-collapse{
+            .accordion{
+                width: 100%;
+    direction: rtl;
+    margin: auto;
+    margin-right: 0;
+    margin-top: 10px;
+    .accordion-button:after {
+        flex-shrink: 0;
+        width: var(--mdb-accordion-btn-icon-width);
+        height: var(--mdb-accordion-btn-icon-width);
+        margin: auto;
+        margin-left: 10% !important;
+        content: "";
+        background-image: var(--mdb-accordion-btn-icon);
+        background-repeat: no-repeat;
+        background-size: var(--mdb-accordion-btn-icon-width);
+        transition: var(--mdb-accordion-btn-icon-transition);
+    }
+    .accordion-item{
+        padding: 18px 24px;
+        .accordion-button{
+            padding: 0;
+            
+        }
+    }
+    .list-group-item{
+        font-size: 12px;
+    }
+            }
+        }
     }
 }
 
+.slid-top-img{
+    @media only screen and (max-width:992px){
+        height: 260px;
+        }
+  
+}
 
-
-
+.dropdown-menu{
+    
+   
+    inset: 30px auto auto 0px !important;
+    border-radius: 88px;
+    border-top-left-radius:  88px !important;
+    border-top-right-radius:  88px !important;
+}
 
 .carousel-item {
     height: 100vh;
@@ -105,12 +157,14 @@ header {
         border-radius: 32px;
           box-shadow: 0px 0px 17px -5px $blueSeeColor;
     }
+  
     .nav-item{
         text-align: center;
         display: flex;
         align-content: center;
         justify-content: center;
         align-items: center;
+        
         .nav-link{
            color: #000;
            font-size: 16px;
@@ -161,7 +215,14 @@ header {
             border-radius: 30px;
             border: 1px solid gray;
             position: relative;
-            top: 16px;
+            top: -1px;
+            text-align: center;
+            display: inline-flex;
+            justify-content: center;
+            align-content: space-between;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: stretch;
         }
         button{
             border: none;
@@ -183,11 +244,11 @@ header {
             width: 40%;
             border-radius: 20px;
             font-size: 18px;
-            background-color: red;
+            background-color: $orengeColor;
             color: $bgLight;
         }
         button:hover{
-            background-color: rgba(255, 0, 0, 0.704);
+            background-color: $blueSeeColor;
             color: $bgLight;
         }
     }
@@ -231,20 +292,38 @@ align-items: center;
     }
 
 }
+.Possibil-title{
+    margin: auto;
+    /* display: initial; */
+    width: 100px;
+    position: relative;
+    top: 100px;
+    z-index: 10;
+    color: white;
+   
+}
 .Possibilities-shell{
     display: flex;
     align-items: center;
     filter: opacity(0.9);
-    background-image: url(/accets/images/Possibilities-img.png);
+    background-image: url(/assets/images/Possibilities-img.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 554px;
     text-align: center;
+    @media only screen and (max-width:992px){
+        height: 576px !important;
+        }
+   
+        .container{
+            position: relative;
+            top: 50px;
+        }
 h2{
     text-align: center;
     color: $bgLight;
     position: relative;
-    top: 50px;
+    top: 0px;
     text-shadow: -1px 4px 8px black;
     @media only screen and (max-width:992px){
         top: 10px;
@@ -259,27 +338,72 @@ h2{
     padding: 60px;
     margin: 15px;
     box-shadow: -1px 1px 12px 3px #0000006e;
+    transition: all 1s;
     img{
         width: 100px;
+        margin: auto;
+        opacity: 1;
+        filter: invert(1);
     }
     p{
         color: $bgLight;
         padding: 35px;
     }
 }
-.Possibil-box-center{
+.Possibil-box:hover{
     background-color: $blueLightColor;
-    margin-top: 140px;
-    @media only screen and (max-width:992px){
-       
-        margin-top: 0px;
-        }
+    box-shadow: -1px 1px 12px 3px rgb(0 0 0 / 57%);
+   
+    
+  
+   
+
 }
+
 @media only screen and (max-width:992px){
 height: 100%;
 }
 }
+.slick-prev{
+
+    @media only screen and (max-width:992px){
+        display: none !important;
+        }
+}
+.slick-next{
+
+    @media only screen and (max-width:992px){
+        display: none !important;
+        }
+}
+.blue-waves-magazine-title{
+    width: 400px;
+    margin: auto;
+    color: $blueSeeColor;
+    position: relative;
+    top: 80px;
+    @media only screen and (max-width:992px){
+        width: 75%;
+        }
+}
 .blue-waves-magazine{
+    position: relative;
+    top: 174px;
+    height: 718px;
+    .Possibil-box{
+        height: 600px;
+        .card-img-top{
+            width: 100%;
+            height: 280px;
+        }
+        .card-text{
+            direction: rtl;
+            text-align: justify;
+        }
+        .card-title{
+            text-align: end;
+        }
+    }
     h2{
      text-align: center;
      margin: 40px;
@@ -299,6 +423,7 @@ height: 100%;
             position: relative;
             bottom: 55px;
             .card-date{
+                direction: rtl;
                 width: 60px;
                 background-color: $blueSeeColor;
                 height: 60px;
@@ -316,9 +441,7 @@ height: 100%;
                 
                 left: -6%;
             }
-            .card-text{
-                text-align: justify;
-            }
+           
         }
        
     }

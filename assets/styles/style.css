@@ -2,25 +2,30 @@
   font-family: "IRANSansWeb";
   font-style: normal;
   font-weight: bold;
-  src: url("/accets/fonts/sans-web/IRANSansWeb_Bold.eot") format("embedded-opentype"), url("/accets/fonts/sans-web/IRANSansWeb_Bold.woff") format("woff2"), url("/accets/fonts/sans-web/IRANSansWeb_Bold.woff") format("woff"), url("/accets/fonts/sans-web/IRANSansWeb_Bold.ttf") format("truetype");
+  src: url("/assets/fonts/sans-web/IRANSansWeb_Bold.eot") format("embedded-opentype"), url("/assets/fonts/sans-web/IRANSansWeb_Bold.woff") format("woff2"), url("/assets/fonts/sans-web/IRANSansWeb_Bold.woff") format("woff"), url("/assets/fonts/sans-web/IRANSansWeb_Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "IRANSansWeb";
   font-style: normal;
   font-weight: 500;
-  src: url("/accets/fonts/sans-web/IRANSansWeb_Light.eot") format("embedded-opentype"), url("/accets/fonts/sans-web/IRANSansWeb_Light.woff2") format("woff2"), url("/accets/fonts/sans-web/IRANSansWeb_Light.woff") format("woff"), url("/accets/fonts/sans-web/IRANSansWeb_Light.ttf") format("truetype");
+  src: url("/assets/fonts/sans-web/IRANSansWeb_Light.eot") format("embedded-opentype"), url("/assets/fonts/sans-web/IRANSansWeb_Light.woff2") format("woff2"), url("/assets/fonts/sans-web/IRANSansWeb_Light.woff") format("woff"), url("/assets/fonts/sans-web/IRANSansWeb_Light.ttf") format("truetype");
 }
 @font-face {
   font-family: "IRANSansWeb";
   font-style: normal;
   font-weight: normal;
-  src: url("/accets/fonts/sans-web/IRANSansWeb.eot") format("embedded-opentype"), url("/accets/fonts/sans-web/IRANSansWeb.woff2") format("woff2"), url("/accets/fonts/sans-web/IRANSansWeb.woff") format("woff"), url("/accets/fonts/sans-web/IRANSansWeb.ttf") format("truetype");
+  src: url("/assets/fonts/sans-web/IRANSansWeb.eot") format("embedded-opentype"), url("/assets/fonts/sans-web/IRANSansWeb.woff2") format("woff2"), url("/assets/fonts/sans-web/IRANSansWeb.woff") format("woff"), url("/assets/fonts/sans-web/IRANSansWeb.ttf") format("truetype");
 }
 * {
   font-family: "IRANSansWeb";
   box-sizing: border-box;
 } 
+html {
+  font-family: "IRANSansWeb";
+}
+
 body {
+  font-family: "IRANSansWeb";
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -50,6 +55,16 @@ header .navbar {
   width: 100%;
   box-shadow: -1px 1px 12px 3px rgba(0, 0, 0, 0.431372549);
 }
+@media only screen and (max-width: 992px) {
+  header .navbar {
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .navbar .navbar-toggler {
+    margin-right: 50px;
+  }
+}
 header .navbar .navbar-nav {
   margin-right: 50px;
 }
@@ -69,6 +84,47 @@ header .navbar .logo-zavosh {
   header .navbar .logo-zavosh {
     width: 130px;
   }
+}
+header .navbar .navbar-collapse .accordion {
+  width: 100%;
+  direction: rtl;
+  margin: auto;
+  margin-right: 0;
+  margin-top: 10px;
+}
+header .navbar .navbar-collapse .accordion .accordion-button:after {
+  flex-shrink: 0;
+  width: var(--mdb-accordion-btn-icon-width);
+  height: var(--mdb-accordion-btn-icon-width);
+  margin: auto;
+  margin-left: 10% !important;
+  content: "";
+  background-image: var(--mdb-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--mdb-accordion-btn-icon-width);
+  transition: var(--mdb-accordion-btn-icon-transition);
+}
+header .navbar .navbar-collapse .accordion .accordion-item {
+  padding: 18px 24px;
+}
+header .navbar .navbar-collapse .accordion .accordion-item .accordion-button {
+  padding: 0;
+}
+header .navbar .navbar-collapse .accordion .list-group-item {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 992px) {
+  .slid-top-img {
+    height: 260px;
+  }
+}
+
+.dropdown-menu {
+  inset: 30px auto auto 0px !important;
+  border-radius: 88px;
+  border-top-left-radius: 88px !important;
+  border-top-right-radius: 88px !important;
 }
 
 .carousel-item {
@@ -172,7 +228,14 @@ header .navbar .logo-zavosh {
   border-radius: 30px;
   border: 1px solid gray;
   position: relative;
-  top: 16px;
+  top: -1px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
 .sale-box .tab-content button {
   border: none;
@@ -190,11 +253,11 @@ header .navbar .logo-zavosh {
   width: 40%;
   border-radius: 20px;
   font-size: 18px;
-  background-color: red;
+  background-color: #ff6e04;
   color: white;
 }
 .sale-box .btn-row button:hover {
-  background-color: rgba(255, 0, 0, 0.704);
+  background-color: #0086b9;
   color: white;
 }
 
@@ -237,21 +300,40 @@ header .navbar .logo-zavosh {
   box-shadow: 35px -35px 0px -5px #0086b9;
 }
 
+.Possibil-title {
+  margin: auto;
+  /* display: initial; */
+  width: 100px;
+  position: relative;
+  top: 100px;
+  z-index: 10;
+  color: white;
+}
+
 .Possibilities-shell {
   display: flex;
   align-items: center;
   filter: opacity(0.9);
-  background-image: url(/accets/images/Possibilities-img.png);
+  background-image: url(/assets/images/Possibilities-img.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 554px;
   text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  .Possibilities-shell {
+    height: 576px !important;
+  }
+}
+.Possibilities-shell .container {
+  position: relative;
+  top: 50px;
 }
 .Possibilities-shell h2 {
   text-align: center;
   color: white;
   position: relative;
-  top: 50px;
+  top: 0px;
   text-shadow: -1px 4px 8px black;
 }
 @media only screen and (max-width: 992px) {
@@ -267,22 +349,21 @@ header .navbar .logo-zavosh {
   padding: 60px;
   margin: 15px;
   box-shadow: -1px 1px 12px 3px rgba(0, 0, 0, 0.431372549);
+  transition: all 1s;
 }
 .Possibilities-shell .Possibil-box img {
   width: 100px;
+  margin: auto;
+  opacity: 1;
+  filter: invert(1);
 }
 .Possibilities-shell .Possibil-box p {
   color: white;
   padding: 35px;
 }
-.Possibilities-shell .Possibil-box-center {
+.Possibilities-shell .Possibil-box:hover {
   background-color: #6ba3b7;
-  margin-top: 140px;
-}
-@media only screen and (max-width: 992px) {
-  .Possibilities-shell .Possibil-box-center {
-    margin-top: 0px;
-  }
+  box-shadow: -1px 1px 12px 3px rgba(0, 0, 0, 0.57);
 }
 @media only screen and (max-width: 992px) {
   .Possibilities-shell {
@@ -290,6 +371,50 @@ header .navbar .logo-zavosh {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .slick-prev {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .slick-next {
+    display: none !important;
+  }
+}
+
+.blue-waves-magazine-title {
+  width: 400px;
+  margin: auto;
+  color: #0086b9;
+  position: relative;
+  top: 80px;
+}
+@media only screen and (max-width: 992px) {
+  .blue-waves-magazine-title {
+    width: 75%;
+  }
+}
+
+.blue-waves-magazine {
+  position: relative;
+  top: 174px;
+  height: 718px;
+}
+.blue-waves-magazine .Possibil-box {
+  height: 600px;
+}
+.blue-waves-magazine .Possibil-box .card-img-top {
+  width: 100%;
+  height: 280px;
+}
+.blue-waves-magazine .Possibil-box .card-text {
+  direction: rtl;
+  text-align: justify;
+}
+.blue-waves-magazine .Possibil-box .card-title {
+  text-align: end;
+}
 .blue-waves-magazine h2 {
   text-align: center;
   margin: 40px;
@@ -309,6 +434,7 @@ header .navbar .logo-zavosh {
   bottom: 55px;
 }
 .blue-waves-magazine .card .card-body .card-date {
+  direction: rtl;
   width: 60px;
   background-color: #0086b9;
   height: 60px;
@@ -324,9 +450,6 @@ header .navbar .logo-zavosh {
   margin-left: inherit;
   position: relative;
   left: -6%;
-}
-.blue-waves-magazine .card .card-body .card-text {
-  text-align: justify;
 }
 
 footer .container {
