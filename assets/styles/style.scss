@@ -25,13 +25,6 @@ header {
     .navbar {
         background: $bgLight;
         border-radius: 0px 0px 205px 205px;
-        // background-image: url(/assets/images/menu-bg.png);
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // background-origin: padding-box;
-        // background-size: 99% 100px;
-        // background-position: center;
-        // overflow: visible;
         z-index: 1000000;
         position: fixed;
         width: 100%;
@@ -95,13 +88,48 @@ header {
         }
     }
 }
+.carousel-item{
+    transition: inherit  !important;
+    animation: fadeIn 2s;
 
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
 .slid-top-img{
+   
+   
+  
     @media only screen and (max-width:992px){
         height: 260px;
         }
   
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .dropdown-menu{
     
@@ -285,10 +313,11 @@ align-items: center;
    }
     .about-us-img{
         margin: 10px;
-        width: 90%;
+        /* width: 90%; */
+        height: 250px;
         border-radius: 30px;
         overflow: hidden;
-        box-shadow: 35px -35px 0px -5px $blueSeeColor;
+        box-shadow: 14px -15px 20px -5px #0086b9;
     }
 
 }
@@ -300,17 +329,17 @@ align-items: center;
     top: 100px;
     z-index: 10;
     color: white;
+    text-shadow: -1px 4px 8px black;
    
 }
 .Possibilities-shell{
     display: flex;
     align-items: center;
-    filter: opacity(0.9);
-    background-image: url(/assets/images/Possibilities-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 554px;
+    background: rgb(13,182,236);
+background: linear-gradient(262deg, rgba(13,182,236,1) 0%, rgba(0,99,255,0.017331932773109293) 51%, rgba(13,182,236,1) 97%);
+    height: 100%;
     text-align: center;
+    box-shadow: 0px 0px 20px 4px #6c6c6ca3;
     @media only screen and (max-width:992px){
         height: 576px !important;
         }
@@ -319,11 +348,11 @@ align-items: center;
             position: relative;
             top: 50px;
         }
-h2{
-    text-align: center;
-    color: $bgLight;
-    position: relative;
-    top: 0px;
+h3{
+    font-size: 1.2rem;
+    /* font-size: 20px; */
+    font-weight: 600;
+    color: white;
     text-shadow: -1px 4px 8px black;
     @media only screen and (max-width:992px){
         top: 10px;
@@ -333,9 +362,9 @@ h2{
 .Possibil-box{
     background-color: $blueSeeColor;
     width: 90%;
-    height: 350px;
+    height: 130px;
     border-radius: 20px;
-    padding: 60px;
+    padding: 15px;
     margin: 15px;
     box-shadow: -1px 1px 12px 3px #0000006e;
     transition: all 1s;
