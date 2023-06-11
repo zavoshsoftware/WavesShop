@@ -272,11 +272,11 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 .wave-container .wave-up {
   width: 100%;
   position: relative;
-  bottom: 220px;
+  bottom: 172px;
 }
 @media only screen and (max-width: 992px) {
   .wave-container .wave-up {
-    bottom: 60px;
+    bottom: 50px;
   }
 }
 
