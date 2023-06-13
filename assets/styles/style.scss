@@ -22,17 +22,23 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    user-select: text;
 
 }
 
 a:hover {
     opacity: 0.8;
+    user-select: text;
 }
 
 h2,
 h4,
 h5 {
     font-weight: 600;
+    user-select: text;
+}
+p{
+    user-select: text;
 }
 
 header {
@@ -395,25 +401,31 @@ header {
     width: 90%;
     margin: 30px auto;
     height: 600px;
+
     @media only screen and (min-width:1400px) {
         max-width: 1320px;
+
 
     }
 
     @media only screen and (min-width:2000px) {
         max-width: 1320px;
+    }
 
+    @media only screen and (max-width:992px) {
+        height: 809px;
+        width: 90%;
     }
 
     .possibil-list-01 {
-        padding-right:45px;
+        padding-right: 45px;
         position: absolute;
         top: 40px;
+        right: 0;
         text-align: justify;
         color: white;
         transition: all 1.5s;
     }
-
 
     .tag {
         border: none;
@@ -432,10 +444,18 @@ header {
         margin: auto;
         margin-left: inherit;
         position: absolute;
-    left: 50%;
-    top: 390px;
-      
-
+        left: 36%;
+        top: 395px;
+        @media only screen and (max-width:900px) {
+            left: 30%;
+            top: 304px;
+            }
+    }
+    ul{
+        @media only screen and (max-width:900px) {
+            font-size: 12px;
+            }
+       
     }
 
     h2 {
@@ -448,16 +468,15 @@ header {
 
     .about-us-img {
         margin: 10px;
-        width: auto;
-        height: 385px;
+        width: 100%;
+        height: 100%;
         border-radius: 30px;
         background-color: #000;
         overflow: hidden;
-        box-shadow: -2px 7px 20px -2px #27292a;
         transition: all 1s;
 
         @media only screen and (max-width:992px) {
-            height: 430px;
+            height: 100%;
 
         }
 
@@ -467,7 +486,7 @@ header {
     }
 
     .possibil-list-shell {
-     position: relative;
+        position: relative;
 
         @media only screen and (max-width:992px) {
             height: 480px;
@@ -478,82 +497,87 @@ header {
 
     .possibil-list-shell:hover {
         .about-us-img {
-            opacity: .3;
+            opacity: .2;
             background-color: #000;
         }
-
-       
-
     }
+}
 
-
+/*-------------------------------------------------------------*/
+.about-us-shell-top{
+    .container-card .card {
+        vertical-align: top;
+    width: 45%;
+    height: 450px;
+    position: relative;
+    margin: 30px;
+    box-shadow: none;
+    border-radius: 25px;
+    background-color: rgb(255 255 255 / 0%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @media only screen and (max-width:900px) {
+        width: 90%;
+        height: 350px;
+        }
+    }
+    
+    .card .content {
+        padding:20px;
+        transition: 0.8s all ease;
+        color: #1b1919;
+        transform: translateY(200px);
+        opacity: 0;
+        @media only screen and (max-width:900px) {
+            padding:0 20px;
+            }
+    }
+    
+    .card:hover .content {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+    .card img {
+        position: absolute;
+    
+        
+        top: 0px;
+        opacity: 0.8;
+        z-index: -1;
+    }
+    
+    .card .content h2 {
+        color: #ba1b1b;
+        font-weight: 400;
+    }
+    
+    .card .content a {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        padding: 8px 30px 11px;
+        border: 2px solid #201087;
+        text-transform: uppercase;
+        color: #11b029;
+        border-radius: 50px;
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.8);
+        transition: 0.8s all ease;
+    }
+    
+    @media only screen and (max-width:900px) {
+        .container-card {
+            display: block;
+        }
+    }
 
 }
 
 
-/*-------------------------------------------------------------*/
-.container-card .card{
-    vertical-align:top;
-    width:280px;
-    height:450px;
-    position:relative;
-    margin:30px;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.8);
-    border-radius:25px;
-    background-color:rgba(255,255,255, 0.1);
-    overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-    text-align:center;
-  }
-  .card .content{
-    padding:20px;
-    transition:0.8s all ease;
-    color:#1b1919;
-    transform:translateY(200px);
-    opacity:0;
-  }
-  .card:hover .content{
-    transform:translateY(0px);
-    opacity:1;
-  }
-  .card img{
-    position:absolute;
-  
-    width:140px;
-    top:50px;
-    opacity:0.8;
-    z-index:-1;
-  }
-  
-  .card .content h2{
-    color:#ba1b1b;
-    font-weight:400;
-  }
-  .card .content a{
-    display:inline-block;
-    margin-top:20px;
-    text-decoration:none;
-    padding:8px 30px 11px;
-    border:2px solid #201087;
-    text-transform:uppercase;
-    color:#11b029;
-    border-radius:50px;
-    box-shadow: 0px 5px 50px rgba(0,0,0,0.8);
-    transition:0.8s all ease;
-  }
-  
-  
-  
-  
-  @media only screen and (max-width:900px) {
-    .container-card{
-      display:block;
-    }
-  }
-  /*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
 
 .carousel-inner {
     position: relative;
@@ -586,7 +610,7 @@ header {
     display: flex;
     align-items: center;
     background: rgb(28, 18, 209);
-    background: linear-gradient(0deg, rgb(0 130 199) 0%, rgb(0 181 235 / 24%) 66%, rgba(245, 245, 245, 0) 100%);
+    background: linear-gradient(0deg, rgb(110 185 224) 0%, rgb(99 219 255 / 24%) 66%, rgba(245, 245, 245, 0) 100%);
     height: 100%;
     text-align: center;
     position: relative;
@@ -623,7 +647,7 @@ header {
             height: 250px !important;
             border-radius: 30px;
             overflow: hidden;
-            box-shadow: 14px -15px 20px -5px #0086b9;
+            box-shadow: 0px 1px 20px -5px #0086b9;
 
             @media only screen and (max-width:992px) {
                 height: 173px !important;
@@ -654,7 +678,7 @@ header {
 
     .Possibil-box {
         background: rgb(28, 18, 209);
-        background: linear-gradient(180deg, rgb(0 128 197) 0%, rgb(0 176 234) 66%, rgb(245, 245, 245) 100%);
+        background: linear-gradient(180deg, rgb(81 172 221) 0%, rgb(139 209 232) 66%, rgb(245, 245, 245) 100%);
         width: 90%;
         height: 130px;
         border-radius: 20px;
@@ -775,7 +799,7 @@ header {
         width: 95% !important;
         border: none;
         border-radius: 20px;
-        box-shadow:1px 1px 7px 0px rgba(15, 28, 83, 0.3215686275);
+        box-shadow: 1px 1px 7px 0px rgba(15, 28, 83, 0.3215686275);
 
         .card-img-top {
             border-radius: 20px 20px 0 0;
@@ -791,7 +815,7 @@ header {
                 direction: rtl;
                 width: 60px;
                 background: rgb(4, 65, 255);
-                background: linear-gradient(180deg, rgba(4, 65, 255, 0.9819404324229692) 24%, rgba(4, 192, 255, 1) 54%, rgba(255, 110, 4, 0) 100%);
+                background:linear-gradient(180deg, rgb(81, 172, 221) 0%, rgb(139, 209, 232) 66%, rgb(245, 245, 245) 100%);
                 height: 60px;
                 color: $bgLight;
                 text-align: center;
@@ -800,7 +824,7 @@ header {
                 justify-content: space-evenly;
                 /* flex-wrap: nowrap; */
                 align-items: center;
-                border-radius: 96px 95px 69px;
+                border-radius: 20px  38px 40px;
                 margin: auto;
                 margin-left: inherit;
                 position: relative;
@@ -900,10 +924,7 @@ footer {
             border-radius: 5px;
             color: white;
 
-            @media only screen and (max-width:992px) {
-                color: #27292a;
-
-            }
+           
         }
 
         span {

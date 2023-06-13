@@ -42,16 +42,31 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
 }
 
 a:hover {
   opacity: 0.8;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
 }
 
 h2,
 h4,
 h5 {
   font-weight: 600;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+}
+
+p {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
 }
 
 header .navbar {
@@ -337,10 +352,17 @@ header .navbar .navbar-collapse .accordion .list-group-item {
     max-width: 1320px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .about-us-shell {
+    height: 809px;
+    width: 90%;
+  }
+}
 .about-us-shell .possibil-list-01 {
   padding-right: 45px;
   position: absolute;
   top: 40px;
+  right: 0;
   text-align: justify;
   color: white;
   transition: all 1.5s;
@@ -362,8 +384,19 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   margin: auto;
   margin-left: inherit;
   position: absolute;
-  left: 50%;
-  top: 390px;
+  left: 36%;
+  top: 395px;
+}
+@media only screen and (max-width: 900px) {
+  .about-us-shell .tag {
+    left: 30%;
+    top: 304px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .about-us-shell ul {
+    font-size: 12px;
+  }
 }
 .about-us-shell h2 {
   color: #0086b9;
@@ -373,17 +406,16 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 }
 .about-us-shell .about-us-img {
   margin: 10px;
-  width: auto;
-  height: 385px;
+  width: 100%;
+  height: 100%;
   border-radius: 30px;
   background-color: #000;
   overflow: hidden;
-  box-shadow: -2px 7px 20px -2px #27292a;
   transition: all 1s;
 }
 @media only screen and (max-width: 992px) {
   .about-us-shell .about-us-img {
-    height: 430px;
+    height: 100%;
   }
 }
 @media (min-width: 1400px) {
@@ -400,54 +432,59 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   }
 }
 .about-us-shell .possibil-list-shell:hover .about-us-img {
-  opacity: 0.3;
+  opacity: 0.2;
   background-color: #000;
 }
 
 /*-------------------------------------------------------------*/
-.container-card .card {
+.about-us-shell-top .container-card .card {
   vertical-align: top;
-  width: 280px;
+  width: 45%;
   height: 450px;
   position: relative;
   margin: 30px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+  box-shadow: none;
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.card .content {
+@media only screen and (max-width: 900px) {
+  .about-us-shell-top .container-card .card {
+    width: 90%;
+    height: 350px;
+  }
+}
+.about-us-shell-top .card .content {
   padding: 20px;
   transition: 0.8s all ease;
   color: #1b1919;
   transform: translateY(200px);
   opacity: 0;
 }
-
-.card:hover .content {
+@media only screen and (max-width: 900px) {
+  .about-us-shell-top .card .content {
+    padding: 0 20px;
+  }
+}
+.about-us-shell-top .card:hover .content {
   transform: translateY(0px);
   opacity: 1;
 }
-
-.card img {
+.about-us-shell-top .card img {
   position: absolute;
-  width: 140px;
-  top: 50px;
+  top: 0px;
   opacity: 0.8;
   z-index: -1;
 }
-
-.card .content h2 {
+.about-us-shell-top .card .content h2 {
   color: #ba1b1b;
   font-weight: 400;
 }
-
-.card .content a {
+.about-us-shell-top .card .content a {
   display: inline-block;
   margin-top: 20px;
   text-decoration: none;
@@ -459,12 +496,12 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.8);
   transition: 0.8s all ease;
 }
-
 @media only screen and (max-width: 900px) {
-  .container-card {
+  .about-us-shell-top .container-card {
     display: block;
   }
 }
+
 /*-------------------------------------------------------------------*/
 .carousel-inner {
   position: relative;
@@ -497,7 +534,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   display: flex;
   align-items: center;
   background: rgb(28, 18, 209);
-  background: linear-gradient(0deg, rgb(0, 130, 199) 0%, rgba(0, 181, 235, 0.24) 66%, rgba(245, 245, 245, 0) 100%);
+  background: linear-gradient(0deg, rgb(110, 185, 224) 0%, rgba(99, 219, 255, 0.24) 66%, rgba(245, 245, 245, 0) 100%);
   height: 100%;
   text-align: center;
   position: relative;
@@ -533,7 +570,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   height: 250px !important;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 14px -15px 20px -5px #0086b9;
+  box-shadow: 0px 1px 20px -5px #0086b9;
 }
 @media only screen and (max-width: 992px) {
   .Possibilities-shell .about-us-shell .about-us-img {
@@ -561,7 +598,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 }
 .Possibilities-shell .Possibil-box {
   background: rgb(28, 18, 209);
-  background: linear-gradient(180deg, rgb(0, 128, 197) 0%, rgb(0, 176, 234) 66%, rgb(245, 245, 245) 100%);
+  background: linear-gradient(180deg, rgb(81, 172, 221) 0%, rgb(139, 209, 232) 66%, rgb(245, 245, 245) 100%);
   width: 90%;
   height: 130px;
   border-radius: 20px;
@@ -680,7 +717,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   direction: rtl;
   width: 60px;
   background: rgb(4, 65, 255);
-  background: linear-gradient(180deg, rgba(4, 65, 255, 0.9819404324) 24%, rgb(4, 192, 255) 54%, rgba(255, 110, 4, 0) 100%);
+  background: linear-gradient(180deg, rgb(81, 172, 221) 0%, rgb(139, 209, 232) 66%, rgb(245, 245, 245) 100%);
   height: 60px;
   color: white;
   text-align: center;
@@ -689,7 +726,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   justify-content: space-evenly;
   /* flex-wrap: nowrap; */
   align-items: center;
-  border-radius: 96px 95px 69px;
+  border-radius: 20px 38px 40px;
   margin: auto;
   margin-left: inherit;
   position: relative;
@@ -769,11 +806,6 @@ footer .connect-ways .fa {
   align-items: center;
   border-radius: 5px;
   color: white;
-}
-@media only screen and (max-width: 992px) {
-  footer .connect-ways .fa {
-    color: #27292a;
-  }
 }
 footer .connect-ways span {
   font-size: 12px;
