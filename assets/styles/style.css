@@ -32,11 +32,6 @@ body {
   overflow-x: hidden;
   direction: rtl;
   background-color: white;
-  background-image: url(../../assets/images/wave.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
 }
 
 a {
@@ -138,7 +133,8 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 
 .carousel-item {
   transition: inherit !important;
-  animation: fadeIn 1s;
+  animation: fadeOut 2s;
+  animation: fadeIn 2.5s;
   -webkit-animation: fadeIn 2s;
   -moz-animation: fadeIn 2s;
   -o-animation: fadeIn 2s;
@@ -153,10 +149,18 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 
 @keyframes fadeIn {
   0% {
-    opacity: 0.5;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
 .dropdown-menu {
@@ -191,7 +195,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   left: 10%;
   top: 38%;
   border-radius: 20px;
-  box-shadow: -1px 1px 20px -4px #0086b9;
+  box-shadow: -1px 1px 20px -4px rgba(0, 1, 2, 0.4196078431);
 }
 @media only screen and (max-width: 992px) {
   .sale-box {
@@ -206,12 +210,11 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   }
 }
 .sale-box .sale-head {
-  background: rgb(10, 3, 133);
-  background: linear-gradient(180deg, rgb(1, 117, 204) 24%, rgba(63, 122, 211, 0.63) 54%, rgba(245, 245, 245, 0) 100%);
+  background-color: rgba(0, 210, 238, 0.97);
   overflow: hidden;
   border-radius: 20px 20px 0 0px;
-  height: 65px;
-  margin-bottom: 0px;
+  height: 40px;
+  margin-bottom: 15px;
   text-align: center;
   font-size: 22px;
   color: white;
@@ -240,8 +243,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 .sale-box .nav-item .active {
   font-size: 16px;
   color: white;
-  background: rgb(12, 6, 119);
-  background: linear-gradient(180deg, rgb(12, 6, 119) 0%, rgb(25, 25, 195) 35%, rgb(0, 212, 255) 100%);
+  background-color: rgba(0, 210, 238, 0.97);
   border-radius: 33px;
   height: 15px;
   display: inline-flex;
@@ -252,8 +254,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   flex-direction: column;
 }
 .sale-box .nav-item .active:hover {
-  background: rgb(12, 6, 119);
-  background: linear-gradient(180deg, rgb(12, 6, 119) 0%, rgb(25, 25, 195) 35%, rgb(0, 212, 255) 100%);
+  background-color: rgba(0, 210, 238, 0.97);
 }
 .sale-box .tab-content .tab-row {
   text-align: center;
@@ -321,17 +322,12 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 }
 .wave-container .wave-up {
   width: 100%;
-  position: relative;
-  bottom: 190px;
+  position: absolute;
+  bottom: -2px;
 }
 @media only screen and (max-width: 992px) {
   .wave-container .wave-up {
-    bottom: 45px;
-  }
-}
-@media only screen and (min-width: 2000px) {
-  .wave-container .wave-up {
-    bottom: 300px;
+    top: 220px;
   }
 }
 
@@ -371,7 +367,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   border: none;
   direction: rtl;
   width: 102px;
-  background: rgb(4, 65, 255);
+  background-color: rgba(0, 210, 238, 0.97);
   height: 55px;
   color: white;
   text-align: center;
@@ -534,7 +530,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   display: flex;
   align-items: center;
   background: rgb(28, 18, 209);
-  background: linear-gradient(0deg, rgb(110, 185, 224) 0%, rgba(99, 219, 255, 0.24) 66%, rgba(245, 245, 245, 0) 100%);
+  background: linear-gradient(0deg, rgba(18, 187, 209, 0.5294117647), rgba(99, 219, 255, 0.24) 66%, rgba(245, 245, 245, 0) 100%);
   height: 100%;
   text-align: center;
   position: relative;
@@ -584,10 +580,8 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 }
 .Possibilities-shell h3 {
   font-size: 1.2rem;
-  /* font-size: 20px; */
   font-weight: 600;
-  color: white;
-  text-shadow: -1px 4px 8px black;
+  color: #007dc2;
   padding: 30px;
 }
 @media only screen and (max-width: 992px) {
@@ -597,14 +591,12 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   }
 }
 .Possibilities-shell .Possibil-box {
-  background: rgb(28, 18, 209);
-  background: linear-gradient(180deg, rgb(81, 172, 221) 0%, rgb(139, 209, 232) 66%, rgb(245, 245, 245) 100%);
+  background: rgba(0, 210, 238, 0.97);
   width: 90%;
   height: 130px;
   border-radius: 20px;
   padding: 15px;
   margin: 15px;
-  box-shadow: -1px 1px 12px 3px rgba(0, 0, 0, 0.431372549);
   transition: all 1s;
   display: flex;
 }
@@ -623,10 +615,6 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   color: white;
   padding: 35px;
 }
-.Possibilities-shell .Possibil-box:hover {
-  background-color: #6ba3b7;
-  box-shadow: -1px 1px 12px 3px rgba(0, 0, 0, 0.57);
-}
 @media only screen and (max-width: 992px) {
   .Possibilities-shell {
     height: 100%;
@@ -634,8 +622,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 }
 
 .slider-nav .slick-current .Possibil-box {
-  background: rgb(12, 6, 119);
-  background: linear-gradient(180deg, rgb(53, 77, 157) 0%, rgb(0, 109, 181) 35%, rgb(0, 212, 255) 100%);
+  background: rgb(0, 125, 194);
   height: 135px;
   width: 93%;
 }
@@ -670,7 +657,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   position: relative;
   top: 45px;
   height: 718px;
-  width: 68%;
+  width: 100%;
   margin: auto;
 }
 @media only screen and (max-width: 992px) {
@@ -716,8 +703,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 .blue-waves-magazine .card .card-body .card-date {
   direction: rtl;
   width: 60px;
-  background: rgb(4, 65, 255);
-  background: linear-gradient(180deg, rgb(81, 172, 221) 0%, rgb(139, 209, 232) 66%, rgb(245, 245, 245) 100%);
+  background-color: rgba(0, 210, 238, 0.97);
   height: 60px;
   color: white;
   text-align: center;
@@ -726,22 +712,16 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   justify-content: space-evenly;
   /* flex-wrap: nowrap; */
   align-items: center;
-  border-radius: 20px 38px 40px;
+  border-radius: 50%;
   margin: auto;
   margin-left: inherit;
   position: relative;
   left: -6%;
-  box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 0.3803921569);
+  box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.3803921569);
 }
 
 footer {
-  position: relative;
-  top: 0px;
-}
-@media only screen and (max-width: 992px) {
-  footer {
-    top: -150px;
-  }
+  background-color: rgba(18, 187, 209, 0.5294117647);
 }
 footer .container {
   padding-top: 20px;
@@ -749,7 +729,7 @@ footer .container {
 }
 @media only screen and (max-width: 992px) {
   footer .container {
-    padding-top: 146px;
+    padding-top: 46px;
   }
 }
 footer .container .col-lg-7 {
@@ -761,9 +741,6 @@ footer .container .col-lg-7 {
     padding-right: 40px;
   }
 }
-footer h5 {
-  color: white;
-}
 @media only screen and (max-width: 992px) {
   footer h5 {
     color: #27292a;
@@ -773,7 +750,6 @@ footer .footer-paraf {
   font-size: 12px;
   text-align: justify;
   padding: 10px 0 0 0;
-  color: white;
 }
 @media only screen and (max-width: 992px) {
   footer .footer-paraf {
@@ -787,7 +763,6 @@ footer .footer-list {
 }
 footer .footer-list .footer-list-link {
   font-size: 12px;
-  color: white;
 }
 @media only screen and (max-width: 992px) {
   footer .footer-list .footer-list-link {
@@ -809,15 +784,11 @@ footer .connect-ways .fa {
 }
 footer .connect-ways span {
   font-size: 12px;
-  color: white;
 }
 @media only screen and (max-width: 992px) {
   footer .connect-ways span {
     color: #27292a;
   }
-}
-footer li {
-  color: white;
 }
 @media only screen and (max-width: 992px) {
   footer li {

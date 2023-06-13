@@ -9,11 +9,7 @@ body {
     overflow-x: hidden;
     direction: rtl;
     background-color: $bgLight;
-    background-image: url(../../assets/images/wave.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
+
 
 
 
@@ -37,7 +33,8 @@ h5 {
     font-weight: 600;
     user-select: text;
 }
-p{
+
+p {
     user-select: text;
 }
 
@@ -121,19 +118,28 @@ header {
     }
 }
 
+
 .carousel-item {
     transition: inherit !important;
-    animation: fadeIn 1s;
+    animation: fadeOut 2s;
+    -webkit-animation: fadeOut 2s;
+    -moz-animation: fadeOut 2s;
+    -o-animation: fadeOut 2s;
+    -ms-animation: fadeOut 2s;
+
+
+
+    animation: fadeIn 2.5s;
 
     -webkit-animation: fadeIn 2s;
     -moz-animation: fadeIn 2s;
     -o-animation: fadeIn 2s;
     -ms-animation: fadeIn 2s;
+
+
 }
 
 .slid-top-img {
-
-
 
     @media only screen and (max-width:992px) {
         height: 260px;
@@ -143,7 +149,7 @@ header {
 
 @keyframes fadeIn {
     0% {
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     100% {
@@ -153,7 +159,7 @@ header {
 
 @-moz-keyframes fadeIn {
     0% {
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     100% {
@@ -163,7 +169,7 @@ header {
 
 @-webkit-keyframes fadeIn {
     0% {
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     100% {
@@ -173,7 +179,7 @@ header {
 
 @-o-keyframes fadeIn {
     0% {
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     100% {
@@ -183,11 +189,67 @@ header {
 
 @-ms-keyframes fadeIn {
     0% {
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     100% {
         opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
     }
 }
 
@@ -225,7 +287,7 @@ header {
     left: 10%;
     top: 38%;
     border-radius: 20px;
-    box-shadow: -1px 1px 20px -4px $blueSeeColor;
+    box-shadow: -1px 1px 20px -4px #0001026b;
 
     @media only screen and (max-width:992px) {
         left: 7%;
@@ -241,12 +303,12 @@ header {
     }
 
     .sale-head {
-        background: rgb(10, 3, 133);
-        background: linear-gradient(180deg, rgb(1 117 204) 24%, rgb(63 122 211 / 63%) 54%, rgba(245, 245, 245, 0) 100%);
+        background-color: rgb(0 210 238 / 97%);
+
         overflow: hidden;
         border-radius: 20px 20px 0 0px;
-        height: 65px;
-        margin-bottom: 0px;
+        height: 40px;
+        margin-bottom: 15px;
         text-align: center;
         font-size: 22px;
         color: $bgLight;
@@ -279,8 +341,8 @@ header {
         .active {
             font-size: 16px;
             color: $bgLight;
-            background: rgb(12, 6, 119);
-            background: linear-gradient(180deg, rgb(12, 6, 119) 0%, rgb(25, 25, 195) 35%, rgb(0, 212, 255) 100%);
+            background-color: rgb(0 210 238 / 97%);
+
             border-radius: 33px;
             height: 15px;
             display: inline-flex;
@@ -292,8 +354,8 @@ header {
         }
 
         .active:hover {
-            background: rgb(12, 6, 119);
-            background: linear-gradient(180deg, rgb(12, 6, 119) 0%, rgb(25, 25, 195) 35%, rgb(0, 212, 255) 100%);
+            background-color: rgb(0 210 238 / 97%);
+
         }
 
     }
@@ -380,17 +442,14 @@ header {
 
     .wave-up {
         width: 100%;
-        position: relative;
-        bottom: 190px;
+        position: absolute;
+        bottom: -2px;
+
 
         @media only screen and (max-width:992px) {
-            bottom: 45px;
+            top: 220px;
         }
 
-        @media only screen and (min-width:2000px) {
-            bottom: 300px;
-
-        }
     }
 }
 
@@ -431,7 +490,8 @@ header {
         border: none;
         direction: rtl;
         width: 102px;
-        background: rgb(4, 65, 255);
+        background-color: rgb(0 210 238 / 97%);
+
         height: 55px;
         color: white;
         text-align: center;
@@ -446,16 +506,18 @@ header {
         position: absolute;
         left: 36%;
         top: 395px;
+
         @media only screen and (max-width:900px) {
             left: 30%;
             top: 304px;
-            }
+        }
     }
-    ul{
+
+    ul {
         @media only screen and (max-width:900px) {
             font-size: 12px;
-            }
-       
+        }
+
     }
 
     h2 {
@@ -504,57 +566,59 @@ header {
 }
 
 /*-------------------------------------------------------------*/
-.about-us-shell-top{
+.about-us-shell-top {
     .container-card .card {
         vertical-align: top;
-    width: 45%;
-    height: 450px;
-    position: relative;
-    margin: 30px;
-    box-shadow: none;
-    border-radius: 25px;
-    background-color: rgb(255 255 255 / 0%);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    @media only screen and (max-width:900px) {
-        width: 90%;
-        height: 350px;
+        width: 45%;
+        height: 450px;
+        position: relative;
+        margin: 30px;
+        box-shadow: none;
+        border-radius: 25px;
+        background-color: rgb(255 255 255 / 0%);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @media only screen and (max-width:900px) {
+            width: 90%;
+            height: 350px;
         }
     }
-    
+
     .card .content {
-        padding:20px;
+        padding: 20px;
         transition: 0.8s all ease;
         color: #1b1919;
         transform: translateY(200px);
         opacity: 0;
+
         @media only screen and (max-width:900px) {
-            padding:0 20px;
-            }
+            padding: 0 20px;
+        }
     }
-    
+
     .card:hover .content {
         transform: translateY(0px);
         opacity: 1;
     }
-    
+
     .card img {
         position: absolute;
-    
-        
+
+
         top: 0px;
         opacity: 0.8;
         z-index: -1;
     }
-    
+
     .card .content h2 {
         color: #ba1b1b;
         font-weight: 400;
     }
-    
+
     .card .content a {
         display: inline-block;
         margin-top: 20px;
@@ -567,7 +631,7 @@ header {
         box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.8);
         transition: 0.8s all ease;
     }
-    
+
     @media only screen and (max-width:900px) {
         .container-card {
             display: block;
@@ -610,7 +674,7 @@ header {
     display: flex;
     align-items: center;
     background: rgb(28, 18, 209);
-    background: linear-gradient(0deg, rgb(110 185 224) 0%, rgb(99 219 255 / 24%) 66%, rgba(245, 245, 245, 0) 100%);
+    background: linear-gradient(0deg, $buleFooter, rgb(99 219 255 / 24%) 66%, rgba(245, 245, 245, 0) 100%);
     height: 100%;
     text-align: center;
     position: relative;
@@ -663,10 +727,8 @@ header {
 
     h3 {
         font-size: 1.2rem;
-        /* font-size: 20px; */
         font-weight: 600;
-        color: white;
-        text-shadow: -1px 4px 8px black;
+        color: #007dc2;
         padding: 30px;
 
         @media only screen and (max-width:992px) {
@@ -677,14 +739,13 @@ header {
     }
 
     .Possibil-box {
-        background: rgb(28, 18, 209);
-        background: linear-gradient(180deg, rgb(81 172 221) 0%, rgb(139 209 232) 66%, rgb(245, 245, 245) 100%);
+        background: rgba(0, 210, 238, 0.97);
         width: 90%;
         height: 130px;
         border-radius: 20px;
         padding: 15px;
         margin: 15px;
-        box-shadow: -1px 1px 12px 3px #0000006e;
+
         transition: all 1s;
         display: flex;
 
@@ -705,15 +766,7 @@ header {
         }
     }
 
-    .Possibil-box:hover {
-        background-color: $blueLightColor;
-        box-shadow: -1px 1px 12px 3px rgb(0 0 0 / 57%);
 
-
-
-
-
-    }
 
     @media only screen and (max-width:992px) {
         height: 100%;
@@ -723,8 +776,7 @@ header {
 .slider-nav {
     .slick-current {
         .Possibil-box {
-            background: rgb(12, 6, 119);
-            background: linear-gradient(180deg, rgb(53 77 157) 0%, rgb(0 109 181) 35%, rgb(0, 212, 255) 100%);
+            background: rgb(0 125 194);
             height: 135px;
             width: 93%;
         }
@@ -762,7 +814,7 @@ header {
     position: relative;
     top: 45px;
     height: 718px;
-    width: 68%;
+    width: 100%;
     margin: auto;
 
     @media only screen and (max-width:992px) {
@@ -814,8 +866,8 @@ header {
             .card-date {
                 direction: rtl;
                 width: 60px;
-                background: rgb(4, 65, 255);
-                background:linear-gradient(180deg, rgb(81, 172, 221) 0%, rgb(139, 209, 232) 66%, rgb(245, 245, 245) 100%);
+                background-color: rgb(0 210 238 / 97%);
+
                 height: 60px;
                 color: $bgLight;
                 text-align: center;
@@ -824,13 +876,13 @@ header {
                 justify-content: space-evenly;
                 /* flex-wrap: nowrap; */
                 align-items: center;
-                border-radius: 20px  38px 40px;
+                border-radius: 50%;
                 margin: auto;
                 margin-left: inherit;
                 position: relative;
 
                 left: -6%;
-                box-shadow: 3px 5px 7px 3px #00000061;
+                box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.3803921569);
             }
 
         }
@@ -839,45 +891,32 @@ header {
 }
 
 footer {
-    // background-image: url(/assets/images/wave.png);
-    // background-position: center;
-    // background-size: cover;
-    // background-position: top;
-    position: relative;
-    top: 0px;
+   
+    background-color: $buleFooter;
 
-    @media only screen and (max-width:992px) {
-        top: -150px;
-    }
+    
 
     .container {
         padding-top: 20px;
         padding-bottom: 25px;
 
         @media only screen and (max-width:992px) {
-            padding-top: 146px;
-
+            padding-top: 46px;
         }
 
-
         .col-lg-7 {
-
             margin-top: 90px;
 
             @media only screen and (max-width:992px) {
                 margin-top: 10px;
                 padding-right: 40px
             }
-
         }
     }
 
     h5 {
-        color: white;
-
         @media only screen and (max-width:992px) {
             color: #27292a;
-
         }
     }
 
@@ -885,11 +924,9 @@ footer {
         font-size: 12px;
         text-align: justify;
         padding: 10px 0 0 0;
-        color: white;
 
         @media only screen and (max-width:992px) {
             color: #27292a;
-
         }
     }
 
@@ -900,15 +937,11 @@ footer {
 
         .footer-list-link {
             font-size: 12px;
-            color: white;
 
             @media only screen and (max-width:992px) {
                 color: #27292a;
-
             }
         }
-
-
     }
 
     .connect-ways {
@@ -923,27 +956,21 @@ footer {
             align-items: center;
             border-radius: 5px;
             color: white;
-
-           
         }
 
         span {
             font-size: 12px;
-            color: white;
+            ;
 
             @media only screen and (max-width:992px) {
                 color: #27292a;
-
             }
         }
     }
 
     li {
-        color: white;
-
         @media only screen and (max-width:992px) {
             color: #27292a;
-
         }
     }
 
