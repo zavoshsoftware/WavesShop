@@ -171,7 +171,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 }
 
 .carousel-item {
-  height: 100vh;
+  height: 80vh;
   position: relative;
   display: none;
   float: left;
@@ -188,18 +188,19 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 }
 
 .sale-box {
-  position: absolute;
+  position: relative;
   background-color: white;
-  height: 430px;
-  width: 350px;
-  left: 10%;
-  top: 38%;
+  height: 210px;
+  width: 80%;
+  margin: auto;
+  top: -88px;
   border-radius: 20px;
   box-shadow: -1px 1px 20px -4px rgba(0, 1, 2, 0.4196078431);
 }
 @media only screen and (max-width: 992px) {
   .sale-box {
-    left: 7%;
+    height: 415px;
+    top: 0;
   }
 }
 @media only screen and (min-width: 2000px) {
@@ -209,24 +210,47 @@ header .navbar .navbar-collapse .accordion .list-group-item {
     top: 54%;
   }
 }
+.sale-box .sale-head-cont {
+  position: relative;
+  top: -33px;
+}
+@media only screen and (max-width: 992px) {
+  .sale-box .sale-head-cont {
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 .sale-box .sale-head {
-  background-color: rgba(0, 210, 238, 0.97);
+  background-color: rgb(255, 110, 4);
+  width: 85%;
+  margin: auto;
+  padding-top: 5px;
   overflow: hidden;
-  border-radius: 20px 20px 0 0px;
-  height: 40px;
+  border-radius: 32px;
+  height: 50px;
   margin-bottom: 15px;
   text-align: center;
   font-size: 22px;
   color: white;
+  box-shadow: 0px 0px 17px -5px #0086b9;
+}
+@media only screen and (max-width: 992px) {
+  .sale-box .sale-head {
+    font-size: 14px;
+    padding-top: 12px;
+  }
 }
 .sale-box .nav-tabs {
   background-color: white;
-  width: 75%;
+  width: 85%;
   margin: auto;
+  padding: 2px 4px;
   border-radius: 32px;
   box-shadow: 0px 0px 17px -5px #0086b9;
 }
 .sale-box .nav-item {
+  width: 50%;
   text-align: center;
   display: flex;
   align-content: center;
@@ -236,6 +260,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 .sale-box .nav-item .nav-link {
   color: #000;
   font-size: 16px;
+  width: 100%;
 }
 .sale-box .nav-item .nav-link:hover {
   background: none;
@@ -244,8 +269,9 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   font-size: 16px;
   color: white;
   background-color: rgba(0, 210, 238, 0.97);
+  height: 87%;
+  border: none;
   border-radius: 33px;
-  height: 15px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -256,19 +282,28 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 .sale-box .nav-item .active:hover {
   background-color: rgba(0, 210, 238, 0.97);
 }
+.sale-box .tab-content {
+  width: 80%;
+  margin: auto;
+}
 .sale-box .tab-content .tab-row {
   text-align: center;
   margin-top: 10px;
+  display: inline-block;
+  width: 24%;
+}
+@media only screen and (max-width: 992px) {
+  .sale-box .tab-content .tab-row {
+    display: block;
+    width: 100%;
+  }
 }
 .sale-box .tab-content .tab-row span {
-  margin-left: 40px;
+  margin-left: 20px;
   color: #000;
 }
-.sale-box .tab-content .tab-row-date {
-  margin-top: 26px;
-}
-.sale-box .tab-content .tab-row-date span {
-  margin-right: 40px;
+.sale-box .tab-content .tab-row-date input {
+  padding: 5px;
 }
 .sale-box .tab-content .counter {
   display: inline-block;
@@ -296,19 +331,18 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 }
 .sale-box .btn-row {
   text-align: center;
-  margin-top: 30px;
 }
 .sale-box .btn-row button {
-  width: 40%;
+  width: 70%;
   border-radius: 20px;
   font-size: 18px;
   background: rgb(255, 110, 4);
-  background: linear-gradient(180deg, rgb(255, 110, 4) 24%, rgba(255, 110, 4, 0.7130328694) 54%, rgba(255, 110, 4, 0.3768984156) 100%);
   color: white;
+  position: relative;
+  top: 9px;
 }
 .sale-box .btn-row button:hover {
   background: rgb(255, 110, 4);
-  background: linear-gradient(356deg, rgb(255, 110, 4) 24%, rgba(255, 110, 4, 0.7130328694) 54%, rgba(255, 110, 4, 0.3768984156) 100%);
   color: white;
 }
 
