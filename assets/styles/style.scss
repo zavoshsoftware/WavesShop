@@ -296,8 +296,9 @@ header {
     }
 
     @media only screen and (min-width:2000px) {
-        height: 591px;
-        width: 506px;
+        height: 223px;
+        width: 90%;
+        max-width: 1300px;
 
         top: 54%;
 
@@ -360,7 +361,7 @@ header {
         .active {
             font-size: 16px;
             color: $bgLight;
-            background-color: rgb(0 210 238 / 97%);
+            background-color: $blueSeeColor;
             height: 87%;
             border: none;
             border-radius: 33px;
@@ -373,7 +374,7 @@ header {
         }
 
         .active:hover {
-            background-color: rgb(0 210 238 / 97%);
+            background-color: $blueSeeColor;
 
         }
 
@@ -487,7 +488,7 @@ header {
     text-align: center;
     width: 90%;
     margin: 30px auto;
-    height: 600px;
+    height:517px ;
 
     @media only screen and (min-width:1400px) {
         max-width: 1320px;
@@ -511,14 +512,14 @@ header {
         right: 0;
         text-align: justify;
         color: white;
-        transition: all 1.5s;
+        transition: all 1s;
     }
 
     .tag {
         border: none;
         direction: rtl;
         width: 102px;
-        background-color: rgb(0 210 238 / 97%);
+        background-color: $blueSeeColor;
 
         height: 55px;
         color: white;
@@ -678,18 +679,36 @@ header {
     box-shadow: inset 0px -20px 100px 130px #070707;
     background-color: #000;
 }
+.way-blue-waves{
+    height: 400px;
+    h2{
+        color: $blueSeeColor;
+    }
+    .question-box{
+        img{
+            width: 25px;
+        }
+        .question-title{
+
+            display: inline-block;
+
+        }
+        .question-answer{
+            text-align: justify;
+        }
+    }
+}
 
 .Possibil-title {
-    margin: auto;
+
     /* display: initial; */
     width: 100px;
-    position: relative;
-    top: 50px;
+
     z-index: 10;
     margin: auto;
     color: #0086b9;
     position: relative;
-    top: -75px;
+    top: 60px;
 
     @media only screen and (max-width:992px) {
         width: 50px;
@@ -701,12 +720,15 @@ header {
 .Possibilities-shell {
     display: flex;
     align-items: center;
-    background: rgb(28, 18, 209);
-    background: linear-gradient(0deg, $buleFooter, rgb(99 219 255 / 24%) 66%, rgba(245, 245, 245, 0) 100%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background: rgb(28, 18, 209);
+    // background: linear-gradient(0deg, $buleFooter, rgb(99 219 255 / 24%) 66%, rgba(245, 245, 245, 0) 100%);
     height: 100%;
     text-align: center;
     position: relative;
-    bottom: 150px;
+    bottom: 0px;
 
     @media only screen and (max-width:992px) {
         position: relative;
@@ -767,21 +789,21 @@ header {
     }
 
     .Possibil-box {
-        background: rgba(0, 210, 238, 0.97);
+        background: white;
         width: 90%;
         height: 130px;
         border-radius: 20px;
         padding: 15px;
         margin: 15px;
 
-        transition: all 1s;
+       
         display: flex;
 
         img {
             width: 100px;
             margin: auto;
             opacity: 1;
-            filter: invert(1);
+
 
             @media only screen and (max-width:992px) {
                 width: 50px;
@@ -802,12 +824,139 @@ header {
 }
 
 .slider-nav {
+
     .slick-current {
-        .Possibil-box {
-            background: rgb(0 125 194);
-            height: 135px;
-            width: 93%;
+        #imag-box01{
+            background: rgb(255 130 61);
+            background-image: url(../images/icon/png-transparent-take-out-cafe-coffee-cup-turkish-coffee-coffee-food-text-cafe-thumbnail_prev_ui.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size: 64%;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+          
+            
+            img{
+                display: none;
+            }
+
         }
+        #imag-box02{
+            background: rgb(255 130 61);
+            background-image: url(../images/icon/new/Water-slides.png);
+            background-position: center;
+            background-size: contain;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: 64%;
+            
+            img{
+                display: none;
+            }
+
+        }
+        #imag-box03{
+            background: rgb(255 130 61);
+            background-image: url(../images/icon/4163679.png);
+            background-position: center;
+            background-size: contain;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: 64%;
+            img{
+                display: none;
+            }
+
+        }
+        #imag-box04{
+            background: rgb(255 130 61);
+            background-image: url(../images/icon/new/masaj.png);
+            background-position: center;
+            background-size: contain;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: 64%;
+            img{
+                display: none;
+            }
+
+        }
+        #imag-box05{
+            background: rgb(255 130 61);
+            background-image: url(../images/icon/new/jacuzzzi_prev_ui.png);
+            background-position: center;
+            background-size: contain;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: 64%;
+            img{
+                display: none;
+            }
+
+        }
+        #imag-box06{
+            background: rgb(255 130 61);
+            background-image: url(../images/icon/new/childen_prev_ui.png);
+            background-position: center;
+            background-size: contain;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: 64%;
+            img{
+                display: none;
+            }
+
+        }
+        #imag-box07{
+            background: rgb(255 130 61);
+            background-image: url(../images/icon/new/masaj.png);
+            background-position: center;
+            background-size: contain;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: 64%;
+            img{
+                display: none;
+            }
+
+        }
+        #imag-box08{
+            background: rgb(255 130 61);
+            background-image: url(../images/icon/new/jacuzzzi_prev_ui.png);
+            background-position: center;
+            background-size: contain;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: 64%;
+            img{
+                display: none;
+            }
+
+        }
+
+        #imag-box09{
+            background: rgb(255 130 61);
+            background-image: url(../images/icon/new/Water-slides.png);
+            background-position: center;
+            background-size: contain;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: 64%;
+            img{
+                display: none;
+            }
+
+        }
+        
     }
 }
 
@@ -853,6 +1002,7 @@ header {
 
     .Possibil-box {
         height: 600px;
+        
 
         .card-img-top {
             width: 100%;
@@ -878,11 +1028,11 @@ header {
     .card {
         width: 95% !important;
         border: none;
-        border-radius: 20px;
-        box-shadow: 1px 1px 7px 0px rgba(15, 28, 83, 0.3215686275);
+        border-radius: 0px !important;
+        // box-shadow: 1px 1px 7px 0px rgba(15, 28, 83, 0.3215686275);
 
         .card-img-top {
-            border-radius: 20px 20px 0 0;
+            // border-radius: 20px 20px 0 0;
             overflow: hidden;
 
         }
@@ -894,7 +1044,7 @@ header {
             .card-date {
                 direction: rtl;
                 width: 60px;
-                background-color: rgb(0 210 238 / 97%);
+                background-color: $blueSeeColor;
 
                 height: 60px;
                 color: $bgLight;
@@ -917,10 +1067,23 @@ header {
 
     }
 }
-
+.filter{
+    filter: invert(1);
+}
+.bg-sea{
+    background-image: url(../images/icon/sea.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 180px;
+    position: relative;
+    top: -128px;
+    z-index: -1;
+}
 footer {
 
-    background-color: $buleFooter;
+
 
 
 

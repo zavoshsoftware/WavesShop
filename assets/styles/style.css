@@ -205,8 +205,9 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 }
 @media only screen and (min-width: 2000px) {
   .sale-box {
-    height: 591px;
-    width: 506px;
+    height: 223px;
+    width: 90%;
+    max-width: 1300px;
     top: 54%;
   }
 }
@@ -268,7 +269,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 .sale-box .nav-item .active {
   font-size: 16px;
   color: white;
-  background-color: rgba(0, 210, 238, 0.97);
+  background-color: #0086b9;
   height: 87%;
   border: none;
   border-radius: 33px;
@@ -280,7 +281,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   flex-direction: column;
 }
 .sale-box .nav-item .active:hover {
-  background-color: rgba(0, 210, 238, 0.97);
+  background-color: #0086b9;
 }
 .sale-box .tab-content {
   width: 80%;
@@ -370,7 +371,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   text-align: center;
   width: 90%;
   margin: 30px auto;
-  height: 600px;
+  height: 517px;
 }
 @media only screen and (min-width: 1400px) {
   .about-us-shell {
@@ -395,13 +396,13 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   right: 0;
   text-align: justify;
   color: white;
-  transition: all 1.5s;
+  transition: all 1s;
 }
 .about-us-shell .tag {
   border: none;
   direction: rtl;
   width: 102px;
-  background-color: rgba(0, 210, 238, 0.97);
+  background-color: #0086b9;
   height: 55px;
   color: white;
   text-align: center;
@@ -541,17 +542,30 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   background-color: #000;
 }
 
+.way-blue-waves {
+  height: 400px;
+}
+.way-blue-waves h2 {
+  color: #0086b9;
+}
+.way-blue-waves .question-box img {
+  width: 25px;
+}
+.way-blue-waves .question-box .question-title {
+  display: inline-block;
+}
+.way-blue-waves .question-box .question-answer {
+  text-align: justify;
+}
+
 .Possibil-title {
-  margin: auto;
   /* display: initial; */
   width: 100px;
-  position: relative;
-  top: 50px;
   z-index: 10;
   margin: auto;
   color: #0086b9;
   position: relative;
-  top: -75px;
+  top: 60px;
 }
 @media only screen and (max-width: 992px) {
   .Possibil-title {
@@ -563,12 +577,12 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 .Possibilities-shell {
   display: flex;
   align-items: center;
-  background: rgb(28, 18, 209);
-  background: linear-gradient(0deg, rgba(18, 187, 209, 0.5294117647), rgba(99, 219, 255, 0.24) 66%, rgba(245, 245, 245, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   text-align: center;
   position: relative;
-  bottom: 150px;
+  bottom: 0px;
 }
 @media only screen and (max-width: 992px) {
   .Possibilities-shell {
@@ -625,20 +639,18 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   }
 }
 .Possibilities-shell .Possibil-box {
-  background: rgba(0, 210, 238, 0.97);
+  background: white;
   width: 90%;
   height: 130px;
   border-radius: 20px;
   padding: 15px;
   margin: 15px;
-  transition: all 1s;
   display: flex;
 }
 .Possibilities-shell .Possibil-box img {
   width: 100px;
   margin: auto;
   opacity: 1;
-  filter: invert(1);
 }
 @media only screen and (max-width: 992px) {
   .Possibilities-shell .Possibil-box img {
@@ -655,10 +667,122 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   }
 }
 
-.slider-nav .slick-current .Possibil-box {
-  background: rgb(0, 125, 194);
-  height: 135px;
-  width: 93%;
+.slider-nav .slick-current #imag-box01 {
+  background: rgb(255, 130, 61);
+  background-image: url(../images/icon/png-transparent-take-out-cafe-coffee-cup-turkish-coffee-coffee-food-text-cafe-thumbnail_prev_ui.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 64%;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+.slider-nav .slick-current #imag-box01 img {
+  display: none;
+}
+.slider-nav .slick-current #imag-box02 {
+  background: rgb(255, 130, 61);
+  background-image: url(../images/icon/new/Water-slides.png);
+  background-position: center;
+  background-size: contain;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+.slider-nav .slick-current #imag-box02 img {
+  display: none;
+}
+.slider-nav .slick-current #imag-box03 {
+  background: rgb(255, 130, 61);
+  background-image: url(../images/icon/4163679.png);
+  background-position: center;
+  background-size: contain;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+.slider-nav .slick-current #imag-box03 img {
+  display: none;
+}
+.slider-nav .slick-current #imag-box04 {
+  background: rgb(255, 130, 61);
+  background-image: url(../images/icon/new/masaj.png);
+  background-position: center;
+  background-size: contain;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+.slider-nav .slick-current #imag-box04 img {
+  display: none;
+}
+.slider-nav .slick-current #imag-box05 {
+  background: rgb(255, 130, 61);
+  background-image: url(../images/icon/new/jacuzzzi_prev_ui.png);
+  background-position: center;
+  background-size: contain;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+.slider-nav .slick-current #imag-box05 img {
+  display: none;
+}
+.slider-nav .slick-current #imag-box06 {
+  background: rgb(255, 130, 61);
+  background-image: url(../images/icon/new/childen_prev_ui.png);
+  background-position: center;
+  background-size: contain;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+.slider-nav .slick-current #imag-box06 img {
+  display: none;
+}
+.slider-nav .slick-current #imag-box07 {
+  background: rgb(255, 130, 61);
+  background-image: url(../images/icon/new/masaj.png);
+  background-position: center;
+  background-size: contain;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+.slider-nav .slick-current #imag-box07 img {
+  display: none;
+}
+.slider-nav .slick-current #imag-box08 {
+  background: rgb(255, 130, 61);
+  background-image: url(../images/icon/new/jacuzzzi_prev_ui.png);
+  background-position: center;
+  background-size: contain;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+.slider-nav .slick-current #imag-box08 img {
+  display: none;
+}
+.slider-nav .slick-current #imag-box09 {
+  background: rgb(255, 130, 61);
+  background-image: url(../images/icon/new/Water-slides.png);
+  background-position: center;
+  background-size: contain;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+.slider-nav .slick-current #imag-box09 img {
+  display: none;
 }
 
 @media only screen and (max-width: 992px) {
@@ -723,11 +847,9 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 .blue-waves-magazine .card {
   width: 95% !important;
   border: none;
-  border-radius: 20px;
-  box-shadow: 1px 1px 7px 0px rgba(15, 28, 83, 0.3215686275);
+  border-radius: 0px !important;
 }
 .blue-waves-magazine .card .card-img-top {
-  border-radius: 20px 20px 0 0;
   overflow: hidden;
 }
 .blue-waves-magazine .card .card-body {
@@ -737,7 +859,7 @@ header .navbar .navbar-collapse .accordion .list-group-item {
 .blue-waves-magazine .card .card-body .card-date {
   direction: rtl;
   width: 60px;
-  background-color: rgba(0, 210, 238, 0.97);
+  background-color: #0086b9;
   height: 60px;
   color: white;
   text-align: center;
@@ -754,9 +876,22 @@ header .navbar .navbar-collapse .accordion .list-group-item {
   box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.3803921569);
 }
 
-footer {
-  background-color: rgba(18, 187, 209, 0.5294117647);
+.filter {
+  filter: invert(1);
 }
+
+.bg-sea {
+  background-image: url(../images/icon/sea.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 180px;
+  position: relative;
+  top: -128px;
+  z-index: -1;
+}
+
 footer .container {
   padding-top: 20px;
   padding-bottom: 25px;
